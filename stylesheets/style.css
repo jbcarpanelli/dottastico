@@ -1,0 +1,26 @@
+.dottastico{
+	z-index:1000000;
+	left:15px;
+	position:fixed;
+	top:50%;
+}
+
+.dottastico a{
+	text-decoration:none;
+}
+
+.dot{
+	opacity:0.7;
+}
+
+.active-dot{
+	opacity:1!important;
+}
+
+.circle{
+	border-radius:100px;
+}
+
+.square{
+	border-radius:0;
+}
