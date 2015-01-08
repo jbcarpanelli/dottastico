@@ -30,16 +30,16 @@ function navigate_between_sections(){
 }
 
 function change_active_section(sections){
-		$(window).scroll(function(){
-			change_active_section_class($(".dot[data-index='" + get_current_section($(window).scrollTop(),sections) +"']"));
-		});
+	$(window).scroll(function(){
+		change_active_section_class($(".dot[data-index='" + get_current_section($(window).scrollTop(),sections) +"']"));
+	});
 }
 
 function change_active_section_class(section){
-		$('.dot').each(function(){
-			$(this).removeClass("active-dot");	
-		});
-		$(section).addClass("active-dot");
+	$('.dot').each(function(){
+		$(this).removeClass("active-dot");	
+	});
+	$(section).addClass("active-dot");
 }
 
 function get_current_section(current_pos, sections){
