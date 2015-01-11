@@ -5,15 +5,13 @@ $(document).ready(function(){
 });
 
 function set_dots(){
-	//Appending dots for sections
 	$('.dottable_section').each(function(index){
-		var offsetted_index = index+1;
+		var offsetted_index = index + 1;
 		var shape = $('.dottastico').data("shape");
 		$('.dottastico').append("<a href='javascript:void(0)' class='dot-link'><div class='dot "+shape+"' data-index="+offsetted_index+"></div></a><br>");	
 	});
-	//Styling dots
 	$('.dottastico').css({
-		'margin-top' : "-"+$('.dottastico').css( "height")
+		'margin-top' : "-"+$('.dottastico').css("height")
 	});
 	$('.dot').css({
 		"width" : $('.dottastico').data('size'),
@@ -33,6 +31,7 @@ function change_active_section(sections){
 	$(window).scroll(function(){
 		change_active_section_class($(".dot[data-index='" + get_current_section($(window).scrollTop(),sections) +"']"));
 	});
+	change_active_section_class($(".dot[data-index='" + get_current_section($(window).scrollTop(),sections) +"']"));
 }
 
 function change_active_section_class(section){
