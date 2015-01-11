@@ -8,6 +8,8 @@ function set_dots(){
 	$('.dottable_section').each(function(index){
 		var offsetted_index = index + 1;
 		var shape = $('.dottastico').data("shape");
+		var position = $('.dottastico').data("position") || "left";
+		$('.dottastico').addClass("dottastico-"+position);
 		$('.dottastico').append("<a href='javascript:void(0)' class='dot-link'><div class='dot "+shape+"' data-index="+offsetted_index+"></div></a><br>");	
 	});
 	$('.dottastico').css({

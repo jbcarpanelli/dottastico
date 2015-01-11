@@ -1,10 +1,16 @@
 .dottastico{
 	z-index:1000000;
-	left:15px;
 	position:fixed;
 	top:50%;
 }
 
+.dottastico-left{
+	left:15px;
+}
+
+.dottastico-right{
+	right:15px;
+}
 .dottastico a{
 	text-decoration:none;
 }
