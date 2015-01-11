@@ -1,6 +1,6 @@
 dottastico
 =========
-A simple JQuery based library to navigate between sections in a scrollable website
+A simple JQuery based library to navigate between sections in a scrollable website.
 
 ## Usage & Simple example
 Just remember to call JQuery library before dottastico:
@@ -15,14 +15,14 @@ Just remember to call JQuery library before dottastico:
 </html>
 ```
 
-* Add a div with the class attribute "dottastico" before your sections. Set the animation time, shape (circle, square), color and size
-* Add the class attribute "dottable-section" and the "dottable-index" data-* in your sections.
+* Add a div with the "dottastico" class attribute before or your sections. Set the animation time, shape (circle, square), color, size and position.
+* Add the "dottable-section" class attribute and the "dottable-index" data-* in your sections.
 
 ```html
 <html>
   ...
   <body>
-    <div class="dottastico" data-shape="circle" data-time="1600" data-size="14px" data-color="#000"></div>
+    <div class="dottastico" data-shape="circle" data-time="1600" data-size="14px" data-color="#000" data-position="right"></div>
     <section class="dottable_section" data-dottable-index="1">
       ...
     </section>
@@ -39,4 +39,4 @@ Just remember to call JQuery library before dottastico:
 You can also try this [demo](https://github.com/jcarpanelli/dottastico/tree/dottastico_demo).
 
 ##Contributing
-Star it, fork it, clone it, improve it, push it!
+Star it, fork it, watch it, clone it, improve it, push it!
