@@ -36,7 +36,7 @@ Just remember to call JQuery library before dottastico:
   </body>
 </html>
 ```
-You can also try this [demo](https://github.com/jcarpanelli/dottastico/tree/dottastico_demo).
+You can also try this live [demo](https://dottastico.herokuapp.com/).
 
 ##Contributing
 Star it, fork it, watch it, clone it, improve it, push it!
