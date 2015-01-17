@@ -48,7 +48,7 @@ function change_active_section_class(section){
 function get_current_section(current_pos, sections){
 	for(i = 0 ; i< sections.length ; i++){
 		if( sections[i+1]!= undefined ){
-			if( current_pos >= sections[i] && current_pos < sections[i+1] ) return i+1;
+			if( current_pos >= (sections[i] - sections[i]/5) && current_pos < (sections[i+1] - sections[i+1]/5) ) return i+1;
 		} else{
 			return i+1;
 		}
