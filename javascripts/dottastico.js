@@ -8,8 +8,8 @@ function set_dots(){
 	var dottastico_height = 0;
 	$('.dottable_section').each(function(index){
 		var offsetted_index = index + 1;
-		var shape = $('.dottastico').data("shape") || "circle";
-		var position = $('.dottastico').data("position") || "left";
+		var shape = $('.dottastico').data("shape") || "square";
+		var position = $('.dottastico').data("position") || "right";
 		$('.dottastico').addClass("dottastico-"+position);
 		$('.dottastico').append("<a href='javascript:void(0)' class='dot-link'><div class='dot "+shape+"' data-index="+offsetted_index+"></div></a>");	
 		dottastico_height = dottastico_height + (parseInt($('.dottastico').data("size").substring(0, $('.dottastico').data("size").length - 2))) + 15;
